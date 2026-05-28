@@ -76,7 +76,20 @@ public class DemoTest {
 	public void test_is_NOT_triangle_7() {
 		assertFalse(Demo.isTriangle(1, 2, -1));	
 	}
+	@Test
+	public void test_is_NOT_triangle_equal_sum() {
+		assertFalse(Demo.isTriangle(1, 2, 3));	
+	}
 	
+	@Test
+	public void test_is_NOT_triangle_zero() {
+		assertFalse(Demo.isTriangle(0, 5, 5));	
+	}
+	
+	@Test
+	public void test_is_NOT_triangle_negative() {
+		assertFalse(Demo.isTriangle(-1, 5, 5));	
+	}
 	
 	
 	@Test
